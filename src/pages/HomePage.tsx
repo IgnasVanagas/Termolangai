@@ -16,11 +16,12 @@ interface HomePageProps {
 }
 
 export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
-  // High-Resolution Curated Architectural Photography directly related to Windows, Doors & Gates
+  // Installation photography from the Termolangai gallery.
   const slides = [
     {
       id: 1,
-      image: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=2000&q=85',
+      image: '/images/termolangai/projects/residential-windows.jpg',
+      alt: 'Gyvenamasis pastatas su tamsiais langų rėmais',
       badge: 'VEKA SOFTLINE 82 MD • A++ VOKIŠKAS STANDARTAS',
       title: 'Šiluma, šviesa ir vokiška inžinerija Jūsų namams',
       description: 'Sertifikuotos 7 kamerų plastikinės profilių sistemos su 3 sandarinimo tarpinėmis bei selektyviniais 3 stiklų paketais.',
@@ -30,7 +31,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
     },
     {
       id: 2,
-      image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2000&q=85',
+      image: '/images/termolangai/projects/glazed-entrance.jpg',
+      alt: 'Įstiklintas įėjimas ir vitrininiai langai',
       badge: 'PANORAMINIAI ALIUMINIO FASADAI IR TERASOS',
       title: 'Berėmės terasų erdvės ir siauro profilio langai',
       description: 'Lengvai viena ranka stumdomos pakeliamos sistemos (HST), atveriančios namus gamtai be jokių šalčio tiltelių.',
@@ -40,7 +42,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
     },
     {
       id: 3,
-      image: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=2000&q=85',
+      image: '/images/termolangai/projects/shopfront-doors.jpg',
+      alt: 'Stiklinės komercinių patalpų įėjimo durys',
       badge: 'DURŲ IR VARTŲ KOLEKCIJA',
       title: 'Saugumas, akustinė ramybė ir griežta estetika',
       description: 'Plastikinės balkono durys, šarvuotos buto durys bei vokiški garažo vartai tiesiai iš regioninių sandėlių.',
@@ -50,7 +53,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
     },
     {
       id: 4,
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=2000&q=85',
+      image: '/images/termolangai/projects/balcony-glazing.jpg',
+      alt: 'Daugiabučio balkonų stiklinimas',
       badge: 'INTERAKTYVUS CAD KONFIGŪRATORIUS',
       title: 'Langų ir durų sąmata pagal tikslius matmenis',
       description: '14 gamyklinių šablonų, proporcinis CAD braižymas milimetrais, A/A++ klasės ir momentinis kainos skaičiavimas.',
@@ -69,34 +73,34 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
     return () => clearInterval(timer);
   }, [slides.length]);
 
-  // High-Resolution Curated Category Photography directly showcasing the actual products
+  // Original Termolangai product imagery.
   const mainCategories = [
     {
       id: 'plastikiniai',
       title: 'PLASTIKO LANGAI',
       subtitle: 'VEKA ir REHAU A++ 7 kamerų sistemos',
-      image: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=800&q=80',
+      image: '/images/termolangai/plastikiniai_langai/veka.png',
       link: '/plastikiniai-langai',
     },
     {
       id: 'aliuminio',
       title: 'ALIUMINIO LANGAI',
       subtitle: 'Siauro rėmo panoraminiai fasadai ir pertvaros',
-      image: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80',
+      image: '/images/termolangai/aliuminiai_langai/alium_langai.jpg',
       link: '/aliuminio-langai',
     },
     {
       id: 'durys',
       title: 'DURYS',
       subtitle: 'Lauko, balkono, terasinės ir šarvuotos durys',
-      image: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=800&q=80',
+      image: '/images/termolangai/durys/sarvo_lauko_310x310.jpg',
       link: '/durys',
     },
     {
       id: 'skaiciuokle',
       title: 'Kainos skaičiuoklė',
       subtitle: '14 CAD šablonų ir momentinė sąmata',
-      image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=800&q=80',
+      image: '/images/termolangai/plastikiniai_langai/GENEO.jpg',
       link: '/langu_ir_duru_kainos_skaiciuokle',
       badge: 'Interaktyvu',
     },
@@ -104,7 +108,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
       id: 'parduotuve',
       title: 'E-Parduotuvė ir išpardavimas',
       subtitle: 'Paruošti gaminiai sandėlyje su nuolaida iki -40%',
-      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=800&q=80',
+      image: '/images/termolangai/durys/PVC_lauko_durys.jpg',
       link: '/e-parduotuve',
       badge: 'Iki -40%',
     },
@@ -112,7 +116,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
       id: 'vartai',
       title: 'GARAŽO VARTAI',
       subtitle: 'Buitiniai ir pramoniniai segmentiniai su automatika',
-      image: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80',
+      image: '/images/termolangai/vartai/buitiniai_vartai_L.jpg',
       link: '/vartai',
     },
   ];
@@ -120,7 +124,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
   return (
     <div className="bg-[#fafaf9]">
       
-      {/* 1. Hero Banner Slider with High-Res Internet Architectural Photography */}
+      {/* 1. Hero with Termolangai installation photography */}
       <section className="pt-28 sm:pt-36 pb-12 sm:pb-16 relative">
         <div className="site-container">
           
@@ -134,7 +138,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
               >
                 <img
                   src={s.image}
-                  alt={s.title}
+                  alt={s.alt}
                   className="w-full h-full object-cover object-center scale-100 transition-transform duration-10000 ease-out group-hover:scale-103"
                 />
                 
@@ -250,12 +254,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onOpenQuoteModal }) => {
                 className="group bg-white border border-[#e7e8eb] rounded-lg p-6 flex flex-col justify-between hover:border-[#cbd0d8] hover:shadow-luxury transition-all duration-300"
               >
                 <div>
-                  {/* Clean edge-to-edge photo container without clipping or awkward borders */}
+                  {/* Product imagery with room around the full frame */}
                   <div className="aspect-[16/10] rounded overflow-hidden bg-[#ebebeb] relative mb-6">
                     <img
                       src={cat.image}
+                      loading="lazy"
                       alt={cat.title}
-                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      className="w-full h-full object-contain bg-white p-5 transition-transform duration-700 group-hover:scale-105"
                     />
                     <span className="absolute top-3 left-3 bg-[#111215]/80 backdrop-blur-md text-white text-[10px] font-mono px-2.5 py-0.5 rounded-sm">
                       0{idx + 1}

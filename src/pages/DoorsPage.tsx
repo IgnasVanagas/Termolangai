@@ -51,7 +51,7 @@ export const DoorsPage: React.FC<DoorsPageProps> = ({ onOpenQuoteModal }) => {
                       <img
                         src={item.imageUrl}
                         alt={item.title}
-                        className="w-full h-full object-cover transition-transform duration-700 group-hover/img:scale-105"
+                        className="w-full h-full object-contain bg-white p-4 transition-transform duration-700 group-hover/img:scale-105"
                       />
                     ) : (
                       <div className="w-full h-full bg-[#f8fafc] p-4 flex items-center justify-center">

@@ -23,7 +23,7 @@ export const ProjectsGallery: React.FC<ProjectsGalleryProps> = ({ onOpenQuoteMod
             </h2>
           </div>
           <p className="text-sm text-[#64676f] max-w-md leading-relaxed">
-            Individualių namų, modernių kotedžų bei pajūrio vilų stiklinimo sprendimai visoje Lietuvoje.
+            Langų, balkonų ir fasadų stiklinimo sprendimai iš „Termolangai“ atliktų darbų galerijos.
           </p>
         </div>
 

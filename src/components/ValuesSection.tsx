@@ -65,8 +65,8 @@ export const ValuesSection: React.FC<ValuesSectionProps> = ({ onOpenQuoteModal }
         {/* Full-width Architectural Image Showcase */}
         <div className="mt-16 rounded overflow-hidden aspect-[21/9] bg-[#ebebeb] relative">
           <img
-            src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=1600&q=85"
-            alt="Moderni namo architektūra su dideliais stiklo langais"
+            src="/images/termolangai/projects/apartment-windows.jpg"
+            alt="Daugiabučio langai ir balkonai iš Termolangai darbų galerijos"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-8 sm:p-12">

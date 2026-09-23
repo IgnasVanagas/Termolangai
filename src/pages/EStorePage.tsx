@@ -84,7 +84,7 @@ export const EStorePage: React.FC<EStorePageProps> = ({ onOpenQuoteModal }) => {
                     <img
                       src={item.imageUrl}
                       alt={item.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-contain bg-white p-4 transition-transform duration-500 group-hover:scale-105"
                     />
                     <span className="absolute top-2.5 left-2.5 text-[10px] font-mono font-medium text-[#c81e1e] bg-white/95 backdrop-blur-md px-2 py-0.5 rounded shadow-sm">
                       -{discountPct}%

@@ -34,8 +34,8 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onOpenQuoteModal }) => {
         {/* Big Architectural Showcase Photo */}
         <div className="rounded-xl overflow-hidden aspect-[21/9] bg-[#ebebeb] mb-20 shadow-luxury relative">
           <img
-            src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2000&q=85"
-            alt="Termolangai gamyba ir montavimas"
+            src="/images/termolangai/projects/commercial-windows.jpg"
+            alt="Komercinio pastato langai iš Termolangai darbų galerijos"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent pointer-events-none" />

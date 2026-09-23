@@ -68,8 +68,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenQuoteModal }) => {
           <div className="lg:col-span-6 xl:col-span-6">
             <div className="relative rounded aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-[#e7e8df] shadow-luxury group">
               <img
-                src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1400&q=85"
-                alt="Minimalistinis modernus namas su panoraminiais langais"
+                src="/images/termolangai/projects/residential-windows.jpg"
+                alt="Gyvenamojo pastato langai iš Termolangai darbų galerijos"
                 className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-103"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent pointer-events-none" />

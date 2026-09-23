@@ -305,7 +305,7 @@ export const DOORS_SUBPAGES: SubpageCategoryItem[] = [
     title: 'Šarvuotos lauko durys',
     subtitle: 'Specialiai lauko sąlygoms su termo tiltelio nutraukimu',
     description: 'Šarvuotos durys namo įėjimui, pagamintos naudojant drėgmei atsparią Okoume ar MDF plokštę bei staktos termo tiltelio nutraukimą, kuris neleidžia durims peršalti ir rasoti.',
-    imageUrl: 'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80',
+    imageUrl: '/images/termolangai/durys/sarvo_lauko_310x310.jpg',
     specs: [
       { label: 'Termotiltelis', value: 'Poliamido intarpas staktoje ir varčioje' },
       { label: 'Atsparumas drėgmei', value: 'Sertifikuota lauko apdaila' },
