@@ -1,0 +1,366 @@
+import { ProductItem, WarehouseLocation, ClearanceItem, ProjectShowcase, FaqItem } from '../types';
+
+export const COMPANY_INFO = {
+  name: 'UAB „Termo langai“',
+  shortName: 'Termolangai',
+  establishedYear: 2010,
+  code: '302524458',
+  vatCode: 'LT100005541618',
+  email: 'termolangai@termolangai.lt',
+  generalPhone: '+370 686 05133',
+  whatsappPhone: '+370 659 56352',
+  whatsappUrl: 'https://api.whatsapp.com/send?phone=37065956352',
+  messengerUrl: 'https://m.me/termolangai.lt',
+  addressKaunas: 'Savanorių pr. 180, Kaunas',
+};
+
+export const STATS_DATA = [
+  {
+    number: '14+',
+    label: 'Metų patirtis rinkoje',
+    sublabel: 'Gamyba ir montavimas nuo 2010 m.',
+  },
+  {
+    number: '45 000+',
+    label: 'Sumontuotų konstrukcijų',
+    sublabel: 'Visoje Lietuvoje ir užsienyje',
+  },
+  {
+    number: '10 m.',
+    label: 'Garantija profiliams',
+    sublabel: 'Vokiška Veka ir Rehau kokybė',
+  },
+  {
+    number: '0.72',
+    unit: 'W/m²K',
+    label: 'Šilumos koeficientas',
+    sublabel: 'A++ pasyvaus būsto standartas',
+  },
+];
+
+export const PRODUCTS_DATA: ProductItem[] = [
+  {
+    id: 'veka-softline-82',
+    category: 'plastikiniai',
+    title: 'VEKA Softline 82 MD',
+    badge: 'A++ Sertifikuota',
+    subtitle: '7 kamerų Vokietijos A-klasės profilis pasyviam namui',
+    description: 'Aukščiausios vokiškos A klasės sistema su 82 mm montavimo gyliu ir 3 sandarinimo kontūrais. Užtikrina maksimalią šilumos izoliaciją bei apsaugą nuo triukšmo.',
+    specs: [
+      { label: 'Kamerų skaičius', value: '7 kameros rėme' },
+      { label: 'Profilio gylis', value: '82 mm' },
+      { label: 'Šilumos laidumas', value: 'Uw iki 0.72 W/m²K' },
+      { label: 'Stiklo paketas', value: 'Iki 52 mm (3 stiklai)' },
+      { label: 'Tarpinės', value: '3 sandarinimo tarpinės (MD)' },
+    ],
+    features: [
+      'A klasės sienelių storis (3 mm)',
+      'Padidinta apsauga nuo įsilaužimo RC2',
+      'Platus spalvų ir medžio imitacijų pasirinkimas',
+      'Puiki garso izoliacija iki 47 dB',
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=800&q=80',
+    popular: true,
+  },
+  {
+    id: 'rehau-geneo',
+    category: 'plastikiniai',
+    title: 'REHAU Geneo & Synego',
+    badge: 'RAU-FIPRO Technologija',
+    subtitle: 'Novatoriški kompozitiniai profiliai be plieno armatūros',
+    description: 'Hi-tech medžiaga RAU-FIPRO X užtikrina išskirtinį stabilumą be plieno armavimo šalčio tiltelių. Puikus pasirinkimas didelių matmenų langams ir vitrinoms.',
+    specs: [
+      { label: 'Profilio gylis', value: '86 mm' },
+      { label: 'Kamerų skaičius', value: '6 kameros' },
+      { label: 'Šilumos laidumas', value: 'Uw iki 0.70 W/m²K' },
+      { label: 'Furnitūra', value: 'Winkhaus ActivPilot' },
+    ],
+    features: [
+      'Sumažintas konstrukcijos svoris iki 40%',
+      'Integruota armatūra eliminuoja šalčio tiltelius',
+      'HDF itin glotnus ir lengvai valomas paviršius',
+      'Idealu moderniems energetiškai nepriklausomiems namams',
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'aliuminio-fasadai',
+    category: 'aliuminio',
+    title: 'Aliuminio langai ir fasadai',
+    badge: 'Architektūrinis dizainas',
+    subtitle: 'Siauro rėmo panoraminės konstrukcijos ir vitrinos',
+    description: 'Itin tvirtos Aluprof ir Reynaers aliuminio sistemos, leidžiančios realizuoti berėmio stiklinimo idėjas, didžiules vitrinas bei šviesias erdves.',
+    specs: [
+      { label: 'Profilio gylis', value: '75 – 86 mm' },
+      { label: 'Terminis tiltelis', value: 'Daugiasluoksnis poliamidas' },
+      { label: 'Šilumos laidumas', value: 'Uw nuo 0.8 W/m²K' },
+      { label: 'Maks. svoris', value: 'Iki 400 kg varčiai' },
+    ],
+    features: [
+      'Plonas matomas profilis maksimaliai dienos šviesai',
+      'Atsparumas deformacijoms ir temperatūrų svyravimams',
+      'RAL spalvynas ir anoduotas metalo paviršius',
+      'Tinka terasoms, kotedžams ir komerciniams pastatams',
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
+    popular: true,
+  },
+  {
+    id: 'durys-hst-lauko',
+    category: 'durys',
+    title: 'HST Terasinės ir lauko durys',
+    badge: 'Maksimalus sandarumas',
+    subtitle: 'Pakeliamos-stumdomos sistemos ir šarvuotos durys',
+    description: 'Elegantiškas perėjimas į terasą ar kiemą su nulinio aukščio slenksčiu. Šarvuotos lauko durys su šilumos tilteliu garantuoja saugumą bei atsparumą šalčiui.',
+    specs: [
+      { label: 'Durų tipas', value: 'HST / Šarvuotos / PVC' },
+      { label: 'Slenkstis', value: 'Šiltas pažemintas slenkstis' },
+      { label: 'Apsaugos lygis', value: 'Daugiataškis fiksavimas' },
+      { label: 'Plotis', value: 'Iki 6.5 m vienai konstrukcijai' },
+    ],
+    features: [
+      'Lengvas varstymas viena ranka nepaisant didelio svorio',
+      'Gera garso izoliacija ir sandarumas perimetru',
+      'Saugūs grūdinti stiklo paketai',
+      'Pilnas spalvų ir rankenų asortimentas',
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'garazo-vartai',
+    category: 'vartai',
+    title: 'Garažo vartai ir automatika',
+    badge: 'Termoizoliuoti 40-45mm',
+    subtitle: 'Segmentiniai buitiniai ir pramoniniai vartai',
+    description: 'Šilti segmentiniai vartai iš cinkuoto plieno su tankia poliuretano izoliacija. Komplektuojami su vokiška Somfy nuotolinio valdymo automatika.',
+    specs: [
+      { label: 'Skydo storis', value: '40 mm / 45 mm termoizoliacija' },
+      { label: 'Valdymas', value: 'Nuotolinis pultelis + telefonas' },
+      { label: 'Saugumas', value: 'Apsauga nuo pirštų prispaudimo' },
+      { label: 'Spyruoklės', value: 'Iki 25 000 pakėlimo ciklų' },
+    ],
+    features: [
+      'Puikus sandarumas palei visą angos perimetrą',
+      'Avarinis atidarymas dingus elektrai',
+      'Tylus ir sklandus slydimas guoliniais ratukais',
+      'Tinkami individualiems garažams ir autoservisams',
+    ],
+    imageUrl: 'https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80',
+  },
+];
+
+export const WAREHOUSES_DATA: WarehouseLocation[] = [
+  {
+    id: 'kaunas-office',
+    city: 'Kaunas',
+    title: 'Kauno centrinis biuras ir salonas',
+    type: 'Centrinis biuras',
+    address: 'Savanorių pr. 180, Kaunas',
+    workingHours: 'I–V 08:00 – 18:00, VI pagal susitarimą',
+    contacts: [
+      {
+        name: 'Sandra',
+        role: 'Pardavimų vadovė',
+        phone: '+37068605133',
+        formattedPhone: '+370 686 05133',
+      },
+      {
+        name: 'Renata',
+        role: 'Projektų konsultantė',
+        phone: '+37065273287',
+        formattedPhone: '+370 652 73287',
+      },
+    ],
+    note: 'Ekspozicijoje galite gyvai apžiūrėti Veka Softline 82 MD profilį, aliuminio sistemas, durų modelius bei spalvų paletes.',
+  },
+  {
+    id: 'kaunas-warehouse',
+    city: 'Kaunas',
+    title: 'Kaunas – Prekyba tiesiai iš sandėlio',
+    type: 'Prekyba iš sandėlio',
+    address: 'Europos pr. 122, Kaunas (Sandėlis)',
+    workingHours: 'I–V 08:00 – 17:00',
+    contacts: [
+      {
+        name: 'Nerijus',
+        role: 'Sandėlio vadovas',
+        phone: '+37068123680',
+        formattedPhone: '+370 681 23680',
+      },
+      {
+        name: 'Daiva',
+        role: 'Užsakymų koordinatorė',
+        phone: '+37063379989',
+        formattedPhone: '+370 633 79989',
+      },
+    ],
+    note: 'Didžiausias paruoštų langų ir durų likutis. Galimybė atsiimti tą pačią dieną arba suderinti greitą pristatymą.',
+  },
+  {
+    id: 'vilnius-warehouse',
+    city: 'Vilnius',
+    title: 'Vilniaus padalinys ir prekyba iš sandėlio',
+    type: 'Prekyba iš sandėlio',
+    address: 'Liepkalnio g. 85, Vilnius',
+    workingHours: 'I–V 08:30 – 17:30',
+    contacts: [
+      {
+        name: 'Renata',
+        role: 'Vilniaus regiono vadovė',
+        phone: '+37065974141',
+        formattedPhone: '+370 659 74141',
+      },
+      {
+        name: 'Darius',
+        role: 'Techninis ekspertas / matuotojas',
+        phone: '+37065955737',
+        formattedPhone: '+370 659 55737',
+      },
+    ],
+    note: 'Vilniuje ir Vilniaus rajone atliekame nemokamą matavimą, konsultuojame objekte bei teikiame montavimo paslaugas.',
+  },
+  {
+    id: 'klaipeda-warehouse',
+    city: 'Klaipėda',
+    title: 'Klaipėdos sandėlis ir Vakarų Lietuvos regionas',
+    type: 'Prekyba iš sandėlio',
+    address: 'Šilutės pl. 51, Klaipėda',
+    workingHours: 'I–V 08:30 – 17:00',
+    contacts: [
+      {
+        name: 'Žygimantas',
+        role: 'Pajūrio regiono vadybininkas',
+        phone: '+37069941092',
+        formattedPhone: '+370 699 41092',
+      },
+      {
+        name: 'Marta',
+        role: 'Klientų aptarnavimas',
+        phone: '+37065061241',
+        formattedPhone: '+370 650 61241',
+      },
+    ],
+    note: 'Aptarnaujame Klaipėdą, Palangą, Kretingą, Šilutę, Gargždus ir visą pajūrio kraštą. Sandarios sistemos atsparios pajūrio vėjams.',
+  },
+];
+
+export const CLEARANCE_ITEMS: ClearanceItem[] = [
+  {
+    id: 'cl-1',
+    title: 'Veka Softline 82 MD Langas (2 varčios)',
+    category: 'Plastikiniai langai',
+    dimensions: '1460 x 1420 mm',
+    specs: '7 kameros, 3 stiklai, viena varstoma/atverčiama, spalva: Antracitas išorėje / Balta viduje',
+    originalPrice: 285,
+    discountPrice: 179,
+    location: 'Kauno sandėlis',
+    status: 'Sandėlyje',
+    imageUrl: 'https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    id: 'cl-2',
+    title: 'Balkoninės PVC durys su pažemintu slenksčiu',
+    category: 'Balkono durys',
+    dimensions: '880 x 2150 mm',
+    specs: '3 stiklų paketas, vokiška Winkhaus furnitūra, atvertimo funkcija, spalva: Balta',
+    originalPrice: 320,
+    discountPrice: 195,
+    location: 'Vilniaus sandėlis',
+    status: 'Sandėlyje',
+    imageUrl: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    id: 'cl-3',
+    title: 'Šarvuotos lauko durys „Termo Premium“',
+    category: 'Šarvuotos durys',
+    dimensions: '960 x 2050 mm',
+    specs: 'Su termo tiltelio nutraukimu, nerūdijančio plieno apvadais, 2 spynos, spalva: Tamsus ąžuolas',
+    originalPrice: 690,
+    discountPrice: 460,
+    location: 'Kauno sandėlis',
+    status: 'Paskutinis vienetas',
+    imageUrl: 'https://images.unsplash.com/photo-1558036117-15d82a90b9b1?auto=format&fit=crop&w=600&q=80',
+  },
+  {
+    id: 'cl-4',
+    title: 'Veka 82 MD Vieno polio langas',
+    category: 'Plastikiniai langai',
+    dimensions: '900 x 1200 mm',
+    specs: 'Varstomas ir atverčiamas, 3 tarpinės, mikrobangis vėdinimas, spalva: Balta/Balta',
+    originalPrice: 165,
+    discountPrice: 99,
+    location: 'Klaipėdos sandėlis',
+    status: 'Sandėlyje',
+    imageUrl: 'https://images.unsplash.com/photo-1582582621959-48d27397dc69?auto=format&fit=crop&w=600&q=80',
+  },
+];
+
+export const PROJECTS_DATA: ProjectShowcase[] = [
+  {
+    id: 'proj-1',
+    title: 'A++ Pasyvus individualus namas Kauno rajone',
+    location: 'Kauno r., Mastaičiai',
+    year: '2025',
+    category: 'Gyvenamasis namas',
+    productsUsed: 'Veka Softline 82 MD (antracitas) + HST stumdomos durys',
+    description: 'Sumontuoti ypač šilti 7 kamerų plastikiniai langai su sandarinimo juostomis ir 4.2 metrų pločio pakeliama-stumdoma terasos sistema.',
+    imageUrl: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'proj-2',
+    title: 'Modernių kotedžų kvartalas Vilniuje',
+    location: 'Vilnius, Bajorai',
+    year: '2024',
+    category: 'Kotedžai',
+    productsUsed: 'REHAU Geneo sistemos + Šarvuotos lauko durys',
+    description: '12 kotedžų kompleksui parinkti energiją taupantys langai be plieno šalčio tiltelių bei individualiai suprojektuotos saugios lauko durys.',
+    imageUrl: 'https://images.unsplash.com/photo-1600585154526-990dced4db0d?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'proj-3',
+    title: 'Pajūrio vila su panoraminėmis aliuminio vitrinomis',
+    location: 'Klaipėdos r., Karklė',
+    year: '2025',
+    category: 'Prabangus būstas',
+    productsUsed: 'Aliuminio fasadinės sistemos Aluprof + Somfy automatika',
+    description: 'Vėjo apkrovoms atsparios vitrinos su specialiu saulės kontrolės stiklo paketu, garantuojančiu vėsą vasarą ir šilumą žiemą.',
+    imageUrl: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=800&q=80',
+  },
+];
+
+export const FAQ_DATA: FaqItem[] = [
+  {
+    question: 'Kuo skiriasi VEKA Softline 82 MD nuo įprastų plastikinių langų?',
+    answer: 'VEKA Softline 82 MD yra priskiriamas aukščiausiai „A“ klasei pagal Europos standartą EN 12608. Jo išorinių sienelių storis yra net 3 mm (B klasės langų būna vos 2.5 mm ar plonesnės). Tai suteikia rėmui iki 20% didesnį atsparumą deformacijoms ir užtikrina, kad didelių gabaritų langai nesikraipys bėgant metams. Papildoma vidurinė tarpinė (MD) užtikrina nepriekaištingą sandarumą.',
+    category: 'Kokybė ir profiliai',
+  },
+  {
+    question: 'Ar langų matavimas ir sąmatos sudarymas yra nemokamas?',
+    answer: 'Taip! Mūsų kvalifikuoti meistrai atvyksta į Jūsų objektą Kaune, Vilniuje, Klaipėdoje ir aplinkiniuose rajonuose visiškai nemokamai. Įvertiname angų specifiką, rekomenduojame tinkamiausią profilį bei per 24 valandas paruošiame tikslią sąmatą be jokių įsipareigojimų.',
+    category: 'Paslaugos ir kaina',
+  },
+  {
+    question: 'Kiek laiko trunka langų gamyba ir pristatymas?',
+    answer: 'Standartinės gamybos terminas yra apie 2–3 savaitės (baltiems langams) ir 3–4 savaitės laminuotiems spalvotiems profiliams. Jei langų reikia skubiai, mūsų sandėliuose Kaune, Vilniuje ir Klaipėdoje turime virš 500 paruoštų standartinių išmatavimų langų ir durų, kuriuos galite atsiimti iškart!',
+    category: 'Gamyba ir terminai',
+  },
+  {
+    question: 'Ar suteikiate garantiją gaminiams ir montavimo darbams?',
+    answer: 'Taip, mes suteikiame oficialią 10 metų gamintojo garantiją profilių spalvos stabilumui ir sandarumui, bei 5 metų garantiją stiklo paketams ir montavimo darbams. Taip pat atliekame pogarantinį servisą.',
+    category: 'Garantija',
+  },
+  {
+    question: 'Ar atliekate senų langų demontavimą ir utilizavimą?',
+    answer: 'Taip, montuotojų komanda atlieka pilną paslaugų ciklą: senų langų demontavimą, angokraščių paruošimą, naujų konstrukcijų montavimą pagal statybos reglamentus (su garo ir vėjo izoliacinėmis juostomis) bei senų konstrukcijų išvežimą utilizavimui.',
+    category: 'Montavimas',
+  },
+];
+
+export const PARTNERS_DATA = [
+  { name: 'VEKA', subtitle: 'A-Class German Profiles' },
+  { name: 'REHAU', subtitle: 'Polymer Innovations' },
+  { name: 'WINKHAUS', subtitle: 'Premium Hardware' },
+  { name: 'SAINT-GOBAIN', subtitle: 'Glass Solutions' },
+  { name: 'ALUPROF', subtitle: 'Aluminum Systems' },
+  { name: 'SOMFY', subtitle: 'Smart Automation' },
+];
